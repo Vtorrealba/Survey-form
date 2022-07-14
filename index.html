@@ -4,9 +4,66 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title></title> 
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">  
   </head>
+  
   <body>
+   <div class="container">
+    <header class="header">
+      <h1 id="title" class="principal-text">Ideal Apple purchase</h1>
+      <p id="description" class="motto">let us help you find the best Apple options for christmas</p>
+    </header>
+    
+    <form id="survey-form">
+     <div class="personal-info">
+      <label id="name-label">Name</label><input type="text" id="name" required name="name" placeholder="Steve Jobs">
+      <label id="email-label">Email</label><input type="email" id="email" required placeholder="elon@gmail.com" name="email">
+      <label id="number-label">Age</label><input type="number" id="number" min="18" max="55" placeholder="age" name="age">
+     </div>
+     <div class="consideration">
+      <p>which of these Apple products do you currently own? 
+      <select id="dropdown" class="dropdown">
+        <option disabled="" selected="" value="">Select one</option>
+        <option value="iphone">Iphone</option>
+        <option value="smartwatch">Smartwatch</option>
+        <option value="airpods">Airpods</option>
+        <option value="macbook">Macbook</option>
+      </select>
+     </div>
+     
+      <p>Have you considered buying a new apple product?</p>
+      <label> 
+       <input class="radio" type="radio" name="user-consideration" value="Yes" checked=""> Of course
+      </label>
+      <label> 
+       <input class="radio" type="radio" name="user-consideration" value="not-really"> Not really
+      </label>
+    <div class="checkboxes"> 
+      <p>If you are an Apple owner, what do you like most about it</p>
+
+      <label><input name="most-like" class="like" type="checkbox" value="security">The security</label>
+      <label><input name="most-like" class="like" type="checkbox" value="the-ecosystem">The ecosystem</label>
+      <label><input name="most-like" class="like" type="checkbox" value="It's- quality">It's quality</label>
+      <label><input name="most-like" class="like" type="checkbox" value="facetime">Facetime</label>
+      <label><input name="most-like" class="like" type="checkbox" value="ios">IOS</label>
+      <label><input name="most-like" class="like" type="checkbox" value="focus-mode">Focus mode</label>
+    </div> 
+    <div>
+      <p class="features">Describe the features you would like your next ideal Apple product to have.</p>
+      <textarea id="desired-features" name="comment" class="text-area" placeholder="I want it to have..."></textarea>
+    </div>
+
+     <div> 
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button> 
+     </div> 
+
+    
+    
+    </form>
+   </div>
+
 
   </body>
 </html>
